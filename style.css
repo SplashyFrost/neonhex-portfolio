@@ -1,0 +1,248 @@
+/* --- Base --- */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* --- Navbar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 10px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar .logo {
+    font-size: 28px;
+    color: #7f5aff;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+.nav-links a:hover {
+    background: linear-gradient(90deg,#3f51b5,#7f5aff);
+    transform: scale(1.1);
+}
+
+/* --- Hero Section --- */
+/* --- Hero Section --- */
+.hero {
+    display: flex;
+    justify-content: center; /* centra orizzontalmente l'intera sezione */
+    align-items: center;
+    flex-wrap: wrap; /* permette di andare a capo su schermi piccoli */
+    padding: 100px 50px; /* più spazio sopra e sotto */
+    gap: 50px; /* spazio tra testo e immagine */
+    background-color: #0d0d0d; /* sfondo uniforme */
+    position: relative;
+    left: 210px;
+}
+
+.hero-text {
+    max-width: 500px; /* limita larghezza testo */
+    text-align: center; /* centra testo e pulsante */
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    color: #00ffff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #00ffff, 0 0 15px #7f5aff;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: #b3b3b3;
+    margin-bottom: 30px;
+}
+
+.hero-text .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #3f51b5, #7f5aff);
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.hero-text .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #7f5aff;
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hero-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #7f5aff;
+}
+
+/* --- Skills --- */
+.skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px;
+    gap: 20px;
+    position: relative;
+    bottom: 50px;
+}
+.skill-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #7f5aff;
+}
+.skill-card i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #00ffff;
+}
+
+/* --- Projects --- */
+.projects {
+    margin: 50px;
+    display: flex;
+    position: relative;
+    right: 60px;
+    flex-direction: space-around;
+    flex-wrap: wrap;
+    gap: 80px;
+    top: 20px;
+}
+.projects h2 {
+    color: #00ffff;
+    margin-bottom: 10px;
+}
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.project-card {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 0 20px #7f5aff;
+}
+.project-card img {
+    width: 100%;
+    display: block;
+}
+.project-info {
+    padding: 15px;
+}
+.project-links .btn {
+    display: inline-block;
+    margin: 5px 5px 0 0;
+    padding: 8px 12px;
+    border-radius: 12px;
+    background: linear-gradient(90deg,#3f51b5,#7f5aff);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.project-links .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #7f5aff;
+}
+
+/* --- Contact --- */
+.contact input, .contact textarea {
+    width: 50%;
+    padding: 12px 15px;
+    margin: 0 auto 15px auto; /* centra gli elementi */
+    display: block; /* necessario per centrare con margin auto */
+    border-radius: 16px;
+    border: none;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.contact input:focus, .contact textarea:focus {
+    outline: none;
+    box-shadow: 0 0 15px #7f5aff;
+}
+.contact button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(90deg,#3f51b5,#7f5aff);
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    right: -800px;
+}
+.contact button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #7f5aff;
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+    top: 20px;
+}
+.footer i {
+    font-size: 30px;
+    color: #fff;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+.footer i:hover {
+    color: #7f5aff;
+    transform: scale(1.2);
+}
+
+/* --- Animazioni --- */
+@keyframes fadeInLeft {
+    0% {opacity: 0; transform: translateX(-20px);}
+    100% {opacity: 1; transform: translateX(0);}
+}
+.projects h2 {
+    color: #00ffff;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 100px;
+    left: 850px;
+}
+.contact h2 {
+    margin-bottom: 20px;
+    position: relative;
+    left: 800px;
+}
