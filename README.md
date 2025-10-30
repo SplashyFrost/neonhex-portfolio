@@ -22,9 +22,7 @@ Yes, I know it's not perfect — the design might be a bit messy, colors may loo
 ## How to View
 
 You can view the website online via GitHub Pages:  
-`https://TUO-USERNAME.github.io/neonhex-portfolio/`  
-*(replace `TUO-USERNAME` with your GitHub username)*
-
+https://splashyfrost.github.io/neonhex-portfolio/
 ---
 
 ## Credits
